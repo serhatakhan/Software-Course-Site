@@ -5,4 +5,4 @@ HTML ve CSS kullanılarak oluşturulan yazılım kursu tanıtım sitesi
 
 <h2> Ekran Görüntüsü </h2>
 
-![](ekran.gif)
+![](progif.gif)
