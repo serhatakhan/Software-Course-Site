@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 130px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    box-shadow: 1px 0px 15px red;
+}
+
+nav header{
+    display: flex;
+    font-size: 20px;
+}
+
+nav header a{
+    font-size: 30px;
+    color: rgba(43, 43, 185, 0.87);
+}
+
+nav header h1{
+    color: rgba(129, 84, 0, 0.822);
+}
+
+nav header span{
+    color: rgb(111, 111, 111);
+}
+
+nav div ul{
+    display: flex;
+    gap: 10px;   
+}
+
+nav div ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(111, 111, 111);
+    transition: 0.5s;
+}
+
+nav div ul li a:hover{
+    color: black;
+    border-bottom: 2px solid gray;
+    /* altına çizgi verdik border bottom ile */
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* first sec content start */
+.course-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.course-container .course-content{
+    text-align: center;
+    flex: 1;
+}
+
+.course-container .image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.course-container .image img{
+    width: 400px;
+}
+
+.course-content h2{
+    color: rgb(111, 111, 111);
+}
+
+.course-content h2 span{
+    color: rgb(254, 67, 67);
+}
+
+.p-course{
+    color: gray;
+    margin: 20px 20px;
+    /* margin ilk değer, alttan üstten 20px - yanındakisağdan soldan 20px */
+}
+
+button{
+    border: none;
+    background-color: rgb(107, 107, 107);
+    color: white;
+    padding: 7px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/* first sec content end */
+
+/* second sec content start */
+.info-content{
+    display: flex;
+    align-items: center;
+    background-color: rgba(125, 181, 255, 0.795);
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px;
+    position: relative;
+    /* aşağıda why udemig yazılı(h3 etiketi) yere position absolute
+    vermiştik ya. onun en tepeye navbara çıkmasını engelliyor
+    bu position relative. bu divin içinde kalmasını sağlıyor */
+    margin-top: 20px;
+}
+
+.info-p{
+    text-align: center;
+    flex: 1;
+}
+
+.image-info{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    background-color: rgb(41, 122, 228);
+    color: white;
+    padding: 10px 20px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    top: -20px;
+    width: 50%;
+}
+
+.info-p p{
+    color: rgb(106, 106, 106);
+    margin: 20px;
+}
+
+.btn-info{
+    border: none;
+    background-color: rgba(255, 82, 43, 0.881);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-info:hover{
+    /* transform: scale(0.9); */
+    transform: rotate(360deg);
+    transition: 0.5s
+}
+/* second sec content end */
+
+.card-container{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.card-container h2{
+    margin-bottom: 25px;
+    font-size: 25px;
+    color: rgb(94, 89, 89);
+    border-bottom: 2px solid;
+    border-radius: 50%;
+}
+
+.card-content{
+    display: flex;
+    justify-content: center;
+}
+
+.card-content .card{
+    margin: 5px 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;
+    border-radius: 10px;
+}
+
+.card-content .card:hover{
+    transform: translatey(-5px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-content .card button{
+    border: none;
+    padding: 3px 6px;
+    background-color: rgb(36, 154, 115);
+    border-radius: 5px;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-content .card img{
+    background-color: gray;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.card-content .card p mark{
+    background-color: rgb(221, 148, 59);
+    color: white;
+}
+/* card course end */
+
+/* footer start */
+footer{
+    padding: 20px;
+    margin-top: 70px;
+    border-top: 2px solid gray;
+}
+
+.footer-start{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid ile gelen özellikleri kullanmak için display grid yazdık.
+    grid template columns repeat 3 ile, 3 tane devam etsin istedik. */
+    /* daha karmaşık şeyler olduğu zaman display grid kullanıyoruz. */
+    /* buradaki fr ise, koyacağımız yerdeki genişliği baz alarak 3e bölüyor, eşit dağıtıyor */
+    place-items: center;
+    /* yine grid kodu ile gelen bir kodla tek bir kodla hem yatayda hem dikeyde ortaladık */
+
+}
+
+footer .footer-start .footer-area{
+    display: flex;
+    flex-direction: column;
+    /* display flex vermeden flex directions ile alt alta sıralayamayız */
+    gap: 20px;
+}
+
+footer .footer-start .footer-area a{
+    text-decoration: none;
+    color: rgb(89, 78, 78);
+}
+
+footer .bottom{
+    text-align: center;
+    margin-top: 30px;
+    border-top: 2px solid gray;
+    padding: 20px;
+}
+/* footer end */
+
+/* media sorguları */
+@media (max-width:800px) {
+    .course-container{
+        flex-direction: column-reverse;
+        /* yukarıda course-containere display flex vermeseydik, burada flex direction açamazdık */
+    }
+    nav{
+        background-color: aquamarine;
+    }
+    nav div{
+        display: none;
+        /* yandaki seçeneklerin hepsi div kapsayıcısının içinde olduğu için
+        800 px 'in altına indiğinde komple o kapsayıcı yok olsun dedik. */
+    }
+}
